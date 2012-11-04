@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+	<h1>Subscribe Settings</h1>
+	<div id='subscribe'>
+		<form method="post" action="">
+			{% csrf_token %}
+			{%if form.errors %}<h3><strong>Сообщение не отправлено!</strong></h3>{% endif %}
+			{{ form.errors }}
+			{% for field in form %}
+				<p>
+					{{ field.label_tag }}
+					{{ field }}
+				</p>
+			{% endfor %}
+			<button type="submit">{% trans "Save" %}</button>
+		</form>
+	</div>
+{% endblock %}
