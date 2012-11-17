@@ -20,7 +20,7 @@ class Category(models.Model):
 	updated_at = models.DateTimeField(verbose_name=_('Updated At'), auto_now=True)
 
 	def __unicode__(self):
-		return SafeUnicode('%s &rarr; %s' % (self.name, self.from_email))
+		return SafeUnicode(self.name)
 
 	class Meta:
 		verbose_name = _('Category')
@@ -33,10 +33,10 @@ class Subscriber(models.Model):
 		(False, _('Women')),
 	)
 	gender = models.BooleanField(_('Gender'), default=False, choices=GENDER_CHOICES)
-	name = models.CharField(max_length=512, verbose_name=_('Name'))
-	surname = models.CharField(max_length=512, verbose_name=_('Surname'))
+	name = models.CharField(max_length=512, blank=True, null=True, verbose_name=_('Name'))
+	surname = models.CharField(max_length=512, blank=True, null=True, verbose_name=_('Surname'))
 	email = models.EmailField(verbose_name=_('E-Mail'), max_length=128)
-	subscribed = models.BooleanField(_('Subscribed'), default=False)
+	subscribed = models.BooleanField(_('Subscribed'), default=True)
 	key = models.CharField(max_length=32, verbose_name=_('Key'), editable=False, default='')
 
 	categories = models.ManyToManyField(Category, related_name='subscribers', verbose_name=_('Category'), blank=True)

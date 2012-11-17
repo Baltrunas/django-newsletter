@@ -10,35 +10,38 @@ class Html5EmailInput(Input):
 
 
 class SubscribeForm(forms.Form):
-	categories = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=Category.objects.filter(public=True))
+	categories = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, label=_('Categories'), queryset=Category.objects.filter(public=True))
 
-	email = forms.EmailField(max_length=128, widget=Html5EmailInput(attrs={'required': 'required', 'placeholder': _('no-reaply@example.com')}))
+	email = forms.EmailField(max_length=128, label=_('E-Mail'), widget=Html5EmailInput(attrs={'required': 'required', 'placeholder': _('no-reaply@example.com')}))
 
 	gender = forms.TypedChoiceField(
+		label=_('Gender'),
 		coerce=lambda x: True if x == 'True' else False,
 		initial=False,
 		choices=((False, _('Women')), (True, _('Man'))),
 		widget=forms.RadioSelect
 	)
 
-	name = forms.CharField(max_length=512, widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Private')}))
-	surname = forms.CharField(max_length=512, widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Person')}))
+	name = forms.CharField(max_length=512, required=False, label=_('Name'), widget=forms.TextInput(attrs={'placeholder': _('Private')}))
+	surname = forms.CharField(max_length=512, required=False, label=_('Surname'), widget=forms.TextInput(attrs={'placeholder': _('Person')}))
 
 
 class SettingsForm(forms.Form):
-	categories = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, queryset=Category.objects.filter(public=True))
+	categories = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple, label=_('Categories'), queryset=Category.objects.filter(public=True))
 	subscribed = forms.TypedChoiceField(
+		label=_('Subscribed'),
 		# coerce=lambda x: True if x == 'True' else False,
 		choices=((False, _('No')), (True, _('Yes'))),
 		widget=forms.RadioSelect
 	)
 	gender = forms.TypedChoiceField(
+		label=_('Gender'),
 		# coerce=lambda x: True if x == 'True' else False,
 		choices=((False, _('Women')), (True, _('Man'))),
 		widget=forms.RadioSelect
 	)
-	name = forms.CharField(max_length=512, widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Private')}))
-	surname = forms.CharField(max_length=512, widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Person')}))
+	name = forms.CharField(max_length=512, label=_('Name'), widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Private')}))
+	surname = forms.CharField(max_length=512, label=_('Surname'), widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Person')}))
 
 
 class SettingsObjectForm(SettingsForm):

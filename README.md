@@ -13,13 +13,24 @@ Just use...
 
 # Futures
 * Mesage Live Preview
-* Gender Inline
-* Сообщения что всё ок в админку
-* Сообшение о подтвержденни в админку
+* Translation
+* Template for Subscribed
+* Template for NewsLetter
+
+# I think about
+* Add templates to admin
+* Add template choises
 * https://github.com/dokterbob/django-newsletter
 * https://github.com/howiworkdaily/django-newsletter
 * http://www.djangopackages.com/grids/g/newsletter/
+* Mmm... Donation...
 
 # ChangeLog
+## 2012.11.17
+### Fix
+* Gender Inline
+* Subscribed Inline
+* Labels for forms field
+
 ## 2012.11.01
 * Create README.md

@@ -13,7 +13,7 @@ context = {}
 
 
 def subscribe(request):
-	context['title'] = _('Subscribe')
+	context['title'] = _('News Letter')
 	if request.method == 'POST':
 		context['form'] = SubscribeForm(request.POST)
 		if context['form'].is_valid():

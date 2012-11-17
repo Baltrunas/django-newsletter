@@ -1,23 +1,42 @@
 {% extends 'base.html' %}
 {% load i18n %}
 {% block content %}
-	<h1>News Letter</h1>
+	<h1>{% trans "News Letter" %} - {{ site.name }}</h1>
 	<div id='subscribe'>
-		{%if ok%}
-			<h2>OK!</h2>
+		{% if ok %}
+			<p>{% trans "We have sent a confirmation e-mail to the following address:" %}</p>
+
+			<h3>{{ new_subscriber.email }}</h3>
+
+			<p><b>{% trans "Why haven't I received a mail?" %}</b></p>
+			<ul class="disc">
+				<li>{% trans "Check your spam filter. Possibly your e-mail was mistakenly classified as spam. Place ronis.de on your White List (list of 	authorised senders) to ensure that you receive e-mails from ronis.de."%}</li>
+				<li>{% trans "There was a typing error in your e-mail address." %}</li>
+				<li>{% trans "Your mail server sends e-mails with a time delay. Check your mailbox again later." %}</li>
+			</ul>
 		{%else%}
 			<form method="post" action="">
 				{% csrf_token %}
-				{%if form.errors %}<h3><strong>Сообщение не отправлено!</strong></h3>{% endif %}
-				{{ form.errors }}
 				{% for field in form %}
-					<p>
-						{{ field.label_tag }}
-						{{ field }}
-					</p>
+					<div id='form-field-{{ field.name }}'>
+						<p>{{ field.label_tag }}</p>
+						{% if field.errors %}
+							<ul class="errors">
+								{% for error in field.errors %}
+									<li>{{ error }}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+						<p>{{ field }}</p>
+					</div>
 				{% endfor %}
 				<button type="submit">{% trans "Subscribe" %}</button>
+				<p>{% trans "Your email address will be used solely for sending newsletters and will not be passed on to third parties." %}</p>
+				<p>{% trans "Each mail you receive from us contains a cancellation link." %}</p>
 			</form>
 		{% endif %}
 	</div>
 {% endblock %}
+
+
+
