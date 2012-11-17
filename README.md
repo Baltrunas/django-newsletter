@@ -12,7 +12,6 @@ A simple News Later.
 Just use...
 
 # Futures
-* Mesage Live Preview
 * Translation
 * Template for Subscribed
 * Template for NewsLetter
@@ -20,6 +19,7 @@ Just use...
 # I think about
 * Add templates to admin
 * Add template choises
+* Live Preview http://www.onlinehtmleditor.net/
 * https://github.com/dokterbob/django-newsletter
 * https://github.com/howiworkdaily/django-newsletter
 * http://www.djangopackages.com/grids/g/newsletter/
