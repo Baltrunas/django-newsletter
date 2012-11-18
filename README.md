@@ -13,8 +13,6 @@ Just use...
 
 # Futures
 * Translation
-* Template for Subscribed
-* Template for NewsLetter
 
 # I think about
 * Add templates to admin
@@ -26,6 +24,11 @@ Just use...
 * Mmm... Donation...
 
 # ChangeLog
+## 2012.11.18
+###Add
+* Template for Subscribed
+* Template for NewsLetter
+
 ## 2012.11.17
 ### Fix
 * Gender Inline
