@@ -31,13 +31,13 @@ class SettingsForm(forms.Form):
 	subscribed = forms.TypedChoiceField(
 		label=_('Subscribed'),
 		# coerce=lambda x: True if x == 'True' else False,
-		choices=((False, _('No')), (True, _('Yes'))),
+		choices=((True, _('Yes')), (False, _('No'))),
 		widget=forms.RadioSelect
 	)
 	gender = forms.TypedChoiceField(
 		label=_('Gender'),
 		# coerce=lambda x: True if x == 'True' else False,
-		choices=((False, _('Women')), (True, _('Man'))),
+		choices=((True, _('Man')), (False, _('Women'))),
 		widget=forms.RadioSelect
 	)
 	name = forms.CharField(max_length=512, label=_('Name'), widget=forms.TextInput(attrs={'required': 'required', 'placeholder': _('Private')}))

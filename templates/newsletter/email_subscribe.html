@@ -1,3 +1,84 @@
-<h1>Hi</h1>
-<p>You are subscribe to ronis.de!</p>
-<p>You must <a href="http://ronis.de.glav.it/newsletter/settings/{{new_subscriber.key}}">confirm you email</a>!</p>
+<style>
+	.header
+	{
+		display: block;
+		height: 50px;
+		border-bottom: 10px solid #2ea2c9;
+	}
+
+	.social
+	{
+		float: right;
+	}
+
+	h1
+	{
+		color: #0c94d3;
+		font-family: Arial;
+	}
+
+	.body
+	{
+		font-family: Arial;
+	}
+
+	.copy
+	{
+		font-family: Arial;
+		border-top: 5px solid #cccccc;
+		color: #555;
+		font-size: 12px;
+	}
+	.copy p
+	{
+		font-family: Arial;
+		color: #0c94d3;
+		font-size: 13px;
+	}
+</style>
+<div class='header'>
+	<img src="http://{{ site.domain }}/templates/img/logo-newsletter.png" alt="{{ site.name }}" align="left">
+
+	<div class="social">
+		<a href="http://plus.google.com/107292667509448218434?prsrc=3"><img src="http://{{ site.domain }}/templates/img/google-plus.png" alt="Google+"></a>
+		<a href="http://twitter.com/ronisgmbh"><img src="http://{{ site.domain }}/templates/img/twitter.png" alt="Twitter"></a>
+		<a href="http://www.facebook.com/RonisGmbH"><img src="http://{{ site.domain }}/templates/img/facebook.png" alt="Facebook"></a>
+		<a href="https://www.xing.com/companies/ronisgmbh"><img src="http://{{ site.domain }}/templates/img/xing.png" alt="Xing"></a>
+		<a href="http://www.youtube.com/user/ronisgmbh"><img src="http://{{ site.domain }}/templates/img/youtube.png" alt="YouTube"></a>
+	</div>
+</div>
+
+<div class='body'>
+	<h1>{{ site.name }} {% trans "Newsletter" %}</h1>
+
+	<p>{% trans "Dear" %} {% if new_subscriber.gender %}{% trans "Sir" %}{% else %}{% trans "Madam" %}{% endif %}</p>
+
+	<p>{% trans "You have subscribed to the following free newsletter." %}</p>
+
+	<ul>
+		{% for cat in new_subscriber.categories.all %}
+			<li>{{ cat.name }}</li>
+		{% endfor %}
+	</ul>
+
+
+<p>{% trans "Thank you for your interest. We will keep you informed." %}</p>
+<p></p>
+
+<p>{% trans "Your sincerely" %}</p>
+<p>{% trans "Your Ronis Team" %}</p>
+<p></p>
+<p></p>
+
+</div>
+
+<div class="copy">
+	<p>
+		{% trans "If you do not receive the newsletter, please forward the e-mail back with the reply function of your e-mail program or use the following link" %}:<br>
+		<a href="http://{{ site.domain }}/newsletter/settings/{{new_subscriber.key}}/">http://{{ site.domain }}/newsletter/settings/{{new_subscriber.key}}/</a>
+	</p>
+
+	{% trans "Copyright" %} 2013 {{ site.name }}<br>
+	{% trans "Contact details" %}: <a href="mailto:news@{{ site.domain }}">news@{{ site.domain }}</a><br>
+	{% trans "Information" %}: <a href="http://{{ site.domain }}/" title="{{ site.domain }}">{{ site.name }}</a><br>
+</div>

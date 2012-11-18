@@ -10,7 +10,9 @@
 
 			<p><b>{% trans "Why haven't I received a mail?" %}</b></p>
 			<ul class="disc">
-				<li>{% trans "Check your spam filter. Possibly your e-mail was mistakenly classified as spam. Place ronis.de on your White List (list of 	authorised senders) to ensure that you receive e-mails from ronis.de."%}</li>
+				<li>{% trans "Check your spam filter. Possibly your e-mail was mistakenly classified as spam. Place " %}
+					{{ site.domain }}
+					{% trans "on your White List (list of 	authorised senders) to ensure that you receive e-mails from" %} {{ site.domain }}.</li>
 				<li>{% trans "There was a typing error in your e-mail address." %}</li>
 				<li>{% trans "Your mail server sends e-mails with a time delay. Check your mailbox again later." %}</li>
 			</ul>
