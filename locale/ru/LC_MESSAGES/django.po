@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-30 15:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: forms.py:13 forms.py:30 models.py:27
+msgid "Categories"
+msgstr ""
+
+#: forms.py:15 models.py:38
+msgid "E-Mail"
+msgstr ""
+
+#: forms.py:15
+msgid "no-reaply@example.com"
+msgstr ""
+
+#: forms.py:18 forms.py:38 models.py:35
+msgid "Gender"
+msgstr ""
+
+#: forms.py:21 forms.py:40 models.py:33
+msgid "Women"
+msgstr ""
+
+#: forms.py:21 forms.py:40 models.py:32
+msgid "Man"
+msgstr ""
+
+#: forms.py:25 forms.py:43 models.py:11 models.py:36
+msgid "Name"
+msgstr ""
+
+#: forms.py:25 forms.py:43
+msgid "Private"
+msgstr ""
+
+#: forms.py:26 forms.py:44 models.py:37
+msgid "Surname"
+msgstr ""
+
+#: forms.py:26 forms.py:44
+msgid "Person"
+msgstr ""
+
+#: forms.py:32 models.py:39
+msgid "Subscribed"
+msgstr ""
+
+#: forms.py:34
+msgid "Yes"
+msgstr ""
+
+#: forms.py:34
+msgid "No"
+msgstr ""
+
+#: models.py:12
+msgid "Description"
+msgstr ""
+
+#: models.py:13
+msgid "Phone"
+msgstr ""
+
+#: models.py:15
+msgid "From name"
+msgstr ""
+
+#: models.py:16
+msgid "From E-Mail"
+msgstr ""
+
+#: models.py:18
+msgid "Public"
+msgstr ""
+
+#: models.py:19 models.py:44 models.py:72
+msgid "Created At"
+msgstr ""
+
+#: models.py:20 models.py:45 models.py:71
+msgid "Updated At"
+msgstr ""
+
+#: models.py:26 models.py:42 models.py:69
+msgid "Category"
+msgstr ""
+
+#: models.py:40
+msgid "Key"
+msgstr ""
+
+#: models.py:63
+msgid "Subscriber"
+msgstr ""
+
+#: models.py:64
+msgid "Subscribers"
+msgstr ""
+
+#: models.py:68
+msgid "Subject"
+msgstr ""
+
+#: models.py:70
+msgid "Body"
+msgstr ""
+
+#: models.py:91
+msgid "Mesage"
+msgstr ""
+
+#: models.py:92
+msgid "Mesages"
+msgstr ""
+
+#: views.py:16 templates/newsletter/subscribe.html:4
+msgid "News Letter"
+msgstr ""
+
+#: views.py:35 templates/newsletter/subscribe.html:35
+msgid "Subscribe"
+msgstr ""
+
+#: views.py:49 templates/newsletter/settings.html:4
+msgid "Subscribe Settings"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:55
+#: templates/newsletter/email_subscribe.html:65
+msgid "Thank you for your interest. We will keep you informed."
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:58
+#: templates/newsletter/email_subscribe.html:68
+msgid "Your sincerely"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:59
+#: templates/newsletter/email_subscribe.html:69
+msgid "Your Ronis Team"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:67
+msgid "You can change your subscribe settings here"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:71
+#: templates/newsletter/email_subscribe.html:81
+msgid "Copyright"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:72
+#: templates/newsletter/email_subscribe.html:82
+msgid "Contact details"
+msgstr ""
+
+#: templates/newsletter/email_newsletter.html:73
+#: templates/newsletter/email_subscribe.html:83
+msgid "Information"
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:52
+msgid "Newsletter"
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:54
+msgid "Dear"
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:54
+msgid "Sir"
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:54
+msgid "Madam"
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:56
+msgid "You have subscribed to the following free newsletter."
+msgstr ""
+
+#: templates/newsletter/email_subscribe.html:77
+msgid ""
+"If you do not receive the newsletter, please forward the e-mail back with "
+"the reply function of your e-mail program or use the following link"
+msgstr ""
+
+#: templates/newsletter/settings.html:21
+msgid "Save"
+msgstr ""
+
+#: templates/newsletter/subscribe.html:7
+msgid "We have sent a confirmation e-mail to the following address:"
+msgstr ""
+
+#: templates/newsletter/subscribe.html:11
+msgid "Why haven't I received a mail?"
+msgstr ""
+
+#: templates/newsletter/subscribe.html:13
+msgid ""
+"Check your spam filter. Possibly your e-mail was mistakenly classified as "
+"spam. Place "
+msgstr ""
+
+#: templates/newsletter/subscribe.html:15
+msgid ""
+"on your White List (list of \tauthorised senders) to ensure that you receive "
+"e-mails from"
+msgstr ""
+
+#: templates/newsletter/subscribe.html:16
+msgid "There was a typing error in your e-mail address."
+msgstr ""
+
+#: templates/newsletter/subscribe.html:17
+msgid ""
+"Your mail server sends e-mails with a time delay. Check your mailbox again "
+"later."
+msgstr ""
+
+#: templates/newsletter/subscribe.html:36
+msgid ""
+"Your email address will be used solely for sending newsletters and will not "
+"be passed on to third parties."
+msgstr ""
+
+#: templates/newsletter/subscribe.html:37
+msgid "Each mail you receive from us contains a cancellation link."
+msgstr ""
