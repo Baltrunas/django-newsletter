@@ -20,7 +20,7 @@ msgstr ""
 
 #: forms.py:13 forms.py:30 models.py:27
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: forms.py:15 models.py:38
 msgid "E-Mail"
@@ -28,79 +28,79 @@ msgstr ""
 
 #: forms.py:15
 msgid "no-reaply@example.com"
-msgstr ""
+msgstr "mustermann@beispiel.de"
 
 #: forms.py:18 forms.py:38 models.py:35
 msgid "Gender"
-msgstr ""
+msgstr "Anrede"
 
 #: forms.py:21 forms.py:40 models.py:33
 msgid "Women"
-msgstr ""
+msgstr "Frau"
 
 #: forms.py:21 forms.py:40 models.py:32
 msgid "Man"
-msgstr ""
+msgstr "Herr"
 
 #: forms.py:25 forms.py:43 models.py:11 models.py:36
 msgid "Name"
-msgstr ""
+msgstr "Nachname"
 
 #: forms.py:25 forms.py:43
 msgid "Private"
-msgstr ""
+msgstr "Mustermann"
 
 #: forms.py:26 forms.py:44 models.py:37
 msgid "Surname"
-msgstr ""
+msgstr "Vorname"
 
 #: forms.py:26 forms.py:44
 msgid "Person"
-msgstr ""
+msgstr "Max"
 
 #: forms.py:32 models.py:39
 msgid "Subscribed"
-msgstr ""
+msgstr "Abonniert"
 
 #: forms.py:34
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: forms.py:34
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: models.py:12
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: models.py:13
 msgid "Phone"
-msgstr ""
+msgstr "Telefone"
 
 #: models.py:15
 msgid "From name"
-msgstr ""
+msgstr "von"
 
 #: models.py:16
 msgid "From E-Mail"
-msgstr ""
+msgstr "von"
 
 #: models.py:18
 msgid "Public"
-msgstr ""
+msgstr "veröffentlichen"
 
 #: models.py:19 models.py:44 models.py:72
 msgid "Created At"
-msgstr ""
+msgstr "erstellt am"
 
 #: models.py:20 models.py:45 models.py:71
 msgid "Updated At"
-msgstr ""
+msgstr "aktualisiert am"
 
 #: models.py:26 models.py:42 models.py:69
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 #: models.py:40
 msgid "Key"
@@ -108,15 +108,15 @@ msgstr ""
 
 #: models.py:63
 msgid "Subscriber"
-msgstr ""
+msgstr "Abonnent"
 
 #: models.py:64
 msgid "Subscribers"
-msgstr ""
+msgstr "Abonnent"
 
 #: models.py:68
 msgid "Subject"
-msgstr ""
+msgstr "Betreff"
 
 #: models.py:70
 msgid "Body"
@@ -124,23 +124,23 @@ msgstr ""
 
 #: models.py:91
 msgid "Mesage"
-msgstr ""
+msgstr "Nachricht"
 
 #: models.py:92
 msgid "Mesages"
-msgstr ""
+msgstr "Nachrichten"
 
 #: views.py:16 templates/newsletter/subscribe.html:4
 msgid "News Letter"
-msgstr ""
+msgstr "Newsletter"
 
 #: views.py:35 templates/newsletter/subscribe.html:35
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonnement"
 
 #: views.py:49 templates/newsletter/settings.html:4
 msgid "Subscribe Settings"
-msgstr ""
+msgstr "Abonnement Einstellungen"
 
 #: templates/newsletter/email_newsletter.html:55
 #: templates/newsletter/email_subscribe.html:65
