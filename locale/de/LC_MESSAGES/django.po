@@ -136,7 +136,7 @@ msgstr "Newsletter"
 
 #: views.py:35 templates/newsletter/subscribe.html:35
 msgid "Subscribe"
-msgstr "Abonnement"
+msgstr "Abonnieren"
 
 #: views.py:49 templates/newsletter/settings.html:4
 msgid "Subscribe Settings"
