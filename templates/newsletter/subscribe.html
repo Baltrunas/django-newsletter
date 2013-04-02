@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load i18n %}
 {% block content %}
-	<h1>{% trans "News Letter" %} - {{ site.name }}</h1>
+	<h1>{% if seo.header %}{{ seo.header|safe }}{% else %}{% trans "News Letter" %} - {{ site.name }}{% endif %}</h1>
+	<div class="intro_text">{{ seo.intro_text|safe }}</div>
+
 	<div id='subscribe'>
 		{% if ok %}
 			<p>{% trans "We have sent a confirmation e-mail to the following address:" %}</p>
@@ -37,6 +39,7 @@
 				<p>{% trans "Each mail you receive from us contains a cancellation link." %}</p>
 			</form>
 		{% endif %}
+	<div class="text">{{ seo.text|safe }}</div>
 	</div>
 {% endblock %}
 
