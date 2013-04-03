@@ -52,8 +52,9 @@ class Subscriber(models.Model):
 
 	def save(self, *args, **kwargs):
 		super(Subscriber, self).save(*args, **kwargs)
-		self.key = hashlib.md5(self.email + str(self.created_at)).hexdigest()
-		super(Subscriber, self).save(*args, **kwargs)
+		if not self.key:
+			self.key = hashlib.md5(self.email + str(self.created_at)).hexdigest()
+			super(Subscriber, self).save(*args, **kwargs)
 
 	def __unicode__(self):
 		return '<%s> - [%s]' % (self.email, self.created_at)

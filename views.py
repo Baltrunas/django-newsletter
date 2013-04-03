@@ -34,7 +34,7 @@ def subscribe(request):
 			email = context['formdate'].get('email', None)
 			subject = _('Subscribe')
 			send_from = '%s <%s>' % ('Ronis', 'no-reaply@ronis.de')
-			subscribe_template = render_to_string('newsletter/email_subscribe.html', context)
+			subscribe_template = render_to_string('newsletter/email_subscribe.html', context, context_instance=RequestContext(request))
 			subscribe_email = EmailMultiAlternatives(subject, subscribe_template, send_from, [email])
 			subscribe_email.attach_alternative(subscribe_template, "text/html")
 			subscribe_email.send()
