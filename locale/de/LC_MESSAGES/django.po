@@ -150,12 +150,12 @@ msgstr ""
 #: templates/newsletter/email_newsletter.html:58
 #: templates/newsletter/email_subscribe.html:68
 msgid "Your sincerely"
-msgstr ""
+msgstr "Mit freundlichen Grüßen"
 
 #: templates/newsletter/email_newsletter.html:59
 #: templates/newsletter/email_subscribe.html:69
 msgid "Your Ronis Team"
-msgstr ""
+msgstr "Ihr Ronis Team"
 
 #: templates/newsletter/email_newsletter.html:67
 msgid "You can change your subscribe settings here"
@@ -200,7 +200,7 @@ msgstr ""
 msgid ""
 "If you do not receive the newsletter, please forward the e-mail back with "
 "the reply function of your e-mail program or use the following link"
-msgstr ""
+msgstr "Sie können den Newsletter abbestellen, indem Sie auf diesen Link klicken."
 
 #: templates/newsletter/settings.html:21
 msgid "Save"
@@ -208,33 +208,33 @@ msgstr ""
 
 #: templates/newsletter/subscribe.html:7
 msgid "We have sent a confirmation e-mail to the following address:"
-msgstr ""
+msgstr "Sie erhalten in kürze ein Nachricht auf folgende E-Mail"
 
 #: templates/newsletter/subscribe.html:11
 msgid "Why haven't I received a mail?"
-msgstr ""
+msgstr "Warum habe ich keine E-Mail erhalten"
 
 #: templates/newsletter/subscribe.html:13
 msgid ""
 "Check your spam filter. Possibly your e-mail was mistakenly classified as "
 "spam. Place "
-msgstr ""
+msgstr "Prüfen Sie Ihren Spamordner. Vielleicht wurde die E-Mail versehentlich als Spam erkannt"
 
 #: templates/newsletter/subscribe.html:15
 msgid ""
 "on your White List (list of \tauthorised senders) to ensure that you receive "
 "e-mails from"
-msgstr ""
+msgstr "Um eine Zuordnung unserer E-Mails als Spam zu verhindern, kopieren Sie bitte newsletter@ronis.de in Ihr Adressbuch."
 
 #: templates/newsletter/subscribe.html:16
 msgid "There was a typing error in your e-mail address."
-msgstr ""
+msgstr "Es gab ein Tippfehler in Ihrer E-Mail-Adresse"
 
 #: templates/newsletter/subscribe.html:17
 msgid ""
 "Your mail server sends e-mails with a time delay. Check your mailbox again "
 "later."
-msgstr ""
+msgstr "Ihre E-Mail-Server sendet E-Mails mit einer zeitlichen Verzögerung. Überprüfen Sie Ihre Mailbox später erneut."
 
 #: templates/newsletter/subscribe.html:36
 msgid ""
